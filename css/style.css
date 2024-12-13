@@ -1,0 +1,51 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    /* padding: 10px 0px 10px 0px; */
+
+}
+.logoimage{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.secondchild{
+    display: flex;
+    gap: 18px;
+}
+.thirdchild{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.dashbutton{
+    border: 1px solid white;
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+.mainhero{
+    /* vertical width */
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.herotext{
+    font-size: 60px;
+    /* margin: 150px 200px; */
+}
+
+.textblue{
+    color: rgb(0, 99, 170);
+}
