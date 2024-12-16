@@ -1,0 +1,77 @@
+body{
+    background-color: #F6F4FE;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.logoimage{
+    height: 50px;
+    width: 30px;
+    object-fit: contain;
+}
+
+.navitems{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.getstartedbutton{
+    height: 28px;
+    border: 2px solid black;
+    border: none;
+    border-radius: 50px;
+    background-color: #6A49F2;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+.herosection{
+    display: flex;
+    padding: 0px 100px;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.color{
+    color: #6A49F2;
+}
+
+
+.hero_heading{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;  
+    margin-bottom: 30px; 
+}
+
+
+.download_button{
+    background-color: #6A49F2;
+    padding: 6px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.download_button:hover{
+    background-color: rgb(0, 4, 24);
+    transition: all ease-in-out 0.5s;
+}
+
+.right_side_image{
+    height: 90vh;
+}
+
+.hero_buttons{
+    margin: 30px;
+}
