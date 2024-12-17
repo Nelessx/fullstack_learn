@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    /* width: 100vh; */
+    overflow-x: hidden ;
+}
+
+
+header{
+    
+    background-image: url(./image/banner-2.jpg);
+    height: 1000px;
+    /* border-bottom-left-radius: 100% 0%;
+    border-bottom-right-radius: 100% 40%; */
+}
+
+nav{
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(51, 51, 51, 0);
+    /* background: none; */
+
+}
+
+.logo_img{
+    width: 120px;
+    object-fit: contain;
+}
+
+.nav_items{
+    
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+
+}
+.orange_color{
+    color: #FF8945;
+}
+
+.blue_color{
+    color: #0B363D;
+}
+
+.login_button{
+    background-color: #FF8945;
+    padding: 13px 30px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    /* font-size:15px ; */
+    font-weight: 600;
+
+}
+
+
+
+.nav_items p:hover{
+    cursor: pointer;
+    color: #FF8945;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18vh;
+    
+}
+
+.hero_text{
+    font-size: 60px;
+    font-weight: 700;
+    padding: auto;
+    line-height: 90px;
+    text-align: center;
+}
+
+.sub_hero_text{
+    margin-top: 30px;
+    text-align: center;
+    color: #616C6E;
+    line-height: 24px;
+}
+
+.hero_button_container{
+    margin: 50px 0px 110px 0px;
+    display: flex;
+    gap: 12px;
+}
+
+.hero_button1{
+    background-color: #0B363D;
+    color: white;
+    padding: 15px 27px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 650;
+}
+
+.hero_button2{
+    background-color: #ffffff;
+    color: white;
+    padding: 15px 27px;
+    border: 1px solid #0B363D ;
+    border-radius: 4px;
+    font-weight: 650;
+    color: #0B363D;
+}
+
+.hero_button2:hover{
+    background-color: #0B363D;
+    color: white;
+    cursor: pointer;
+    border: #0B363D;
+    transition: all ease-in 0.5s;
+}
+
+.Dashboard{
+ 
+    width: 930px;
+    border-radius: 20px;
+    /* height: 60vh;
+    width: 60vw; */
+}
+
+#wave{
+    /* display: flex; */
+    position: absolute;
+    bottom: -400px;
+}
