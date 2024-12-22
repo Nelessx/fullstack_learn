@@ -25,6 +25,7 @@ nav{
     align-items: center;
     background-color:rgba(51, 51, 51, 0);
     /* background: none; */
+    /* position: fixed; */
 
 }
 
@@ -137,4 +138,113 @@ nav{
     /* display: flex; */
     position: absolute;
     bottom: -400px;
+}
+
+.social{
+    display: flex;
+    width: 77vw;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+.social img{
+    width: 100px;   
+    height: 30px;
+}
+
+.feature{
+    margin: 180px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.feature_left .card_parent{
+    display: flex;
+}
+
+.about_text{
+    padding: 40px 0px;
+    margin-bottom: 30px;
+}
+
+.feature_right{
+    width: 50vw;
+    display: flex;
+}
+
+.feature_left .textone{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.feature_left .texttwo{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.cardbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 33px 20px;
+    padding: 20px 30px;
+    width: 200px;
+    height: 230px;
+    color: #0B363D;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(255, 166, 0, 0.249),rgba(79, 179, 174, 0.169));
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.214) ;
+}
+.cardbox img{
+    width: 55px;
+}
+
+.cardbox div{
+    display: flex;
+    justify-content: space-between;
+}
+.structure{
+    background-color: #ffcbad;
+    display: flex;
+    gap: 100px;
+    padding: 50px 100px;
+}
+.upper_structure{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stru{
+    font-size: 30px;
+    font-weight: 600;
+}
+.right_structure h2{
+font-size: 40px;
+font-weight: 600;
+}
+.dottext_container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dot_text{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.up_dottext{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.down_dottext{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
 }

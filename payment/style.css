@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.whole_container{
+    padding: 30px 0px;
+}
+
+.whole_container{
+    background-color: bisque;
+}
+
+.orange{
+    color: orangered;
+}
+
+.child_one{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
+.price{
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    gap: 20px;
+    padding: 20px;
+    margin: 0px 10px;
+}
