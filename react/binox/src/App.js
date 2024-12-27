@@ -168,92 +168,73 @@ function App() {
           </div>
 
           <div>
-            <div className=" flex flex-col py-24 gap-7 items-center justify-center mx-auto">
-              <div className="flex gap-7">
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+            <div className=" grid grid-cols-2 lg:grid-cols-5 py-24 gap-7 items-center justify-center mx-auto">
+              
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40   flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-              </div>
-              <div className=" flex gap-7">
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+             
+              
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
+                <div className="  bg-white rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
                   <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
+                  <p className=" font-medium lg:text-lg text-base">
                     Customizable with Elementor
                   </p>
                 </div>
-              </div>
-              <div className=" flex gap-7">
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
-                  <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
-                    Customizable with Elementor
-                  </p>
-                </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
-                  <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
-                    Customizable with Elementor
-                  </p>
-                </div>
-                <div className="  bg-white rounded-lg h-48 w-48    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-gray-300">
-                  <img src={element} alt="" />
-                  <p className=" font-medium text-lg">
-                    Customizable with Elementor
-                  </p>
-                </div>
+              
                 
-              </div>
+              
             </div>
           </div>
         </div>
