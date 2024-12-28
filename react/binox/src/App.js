@@ -8,8 +8,15 @@ import pic3 from "./pic3.webp";
 import pic4 from "./pic4.png";
 import pic5 from "./pic5.webp";
 import element from "./element.png";
+// import card_img from " ./bank.webp";
 
-function App() {
+function App() {    
+
+    // const boxes = [
+    //     {image: card_img,
+    //         name:"Banking"
+    //      }
+    // ]
   return (
     <body>
       <header className=" bg-[#040D12] ">
@@ -142,8 +149,8 @@ function App() {
         </div>
       </header>
 
-      <section className=" bg-[#ebfffc]">
-        <div className=" bg-[#ebfffc] w-10/12 mx-auto">
+      <section className=" bg-gradient-to-b from-[#bdfff5] to-[#00201b]">
+        <div className="  w-10/12 mx-auto">
           <div className=" flex flex-col gap-6 lg:flex-row justify-between  mx-auto pt-14 lg:pt-24">
             <p className=" text-3xl lg:text-5xl font-semibold mx-auto lg:ml-0">
               Exclusive Features
@@ -169,62 +176,62 @@ function App() {
 
           <div>
             <div className=" grid grid-cols-2 lg:grid-cols-5 py-24 gap-7 items-center justify-center mx-auto">
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40   flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40   flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
 
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
                 </p>
               </div>
-              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-2xl hover:shadow-white">
+              <div className="  bg-gradient-to-tl from-purple-200 to-gray-200 rounded-lg lg:h-48 lg:w-48 h-40 w-40    flex flex-col justify-around items-center text-center hover:shadow-xl hover:shadow-black">
                 <img src={element} alt="" />
                 <p className=" font-medium lg:text-lg text-base">
                   Customizable with Elementor
@@ -232,6 +239,32 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-100">
+        <div className="bg-gray-100 py-20 lg:w-10/12 mx-auto flex flex-col justify-around items-center">
+          <div className=" text-center grid grid-cols-1 gap-7">
+            <p className=" w-11/12 lg:w-7/12 mx-auto text-4xl font-semibold">
+              An extensive selection of
+              <span className=" font-extrabold "> 12+</span> ready-made Business
+              websites.
+            </p>
+            <p className=" w-10/12 lg:w-5/12 mx-auto text-[#555555]">
+              Best-in-class designs to get started. Install any demo or template
+              with a single click. Mix and match section templates to create
+              unique sites.
+            </p>
+          </div>
+
+          <div>
+            {/* boxes.map((box) => (
+                {box.image},
+                {box.name}
+            )) */}
+          </div>
+
+          <button></button>
         </div>
       </section>
     </body>
