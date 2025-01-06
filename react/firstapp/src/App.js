@@ -3,6 +3,7 @@ import logo from "./favicon.ico";
 import dashboard from "./Dashboard.png";
 import amazon from "./amazon.png";
 import axios from "axios";
+import { Link } from "react-router";
 
 export default function App() {
   const [blogs, setBlogs] = useState();
@@ -188,30 +189,29 @@ export default function App() {
 
   return (
     <div>
-      <button onClick={fetchblog}> get blogs</button>
       <div>
         <div>
-          <nav className=" bg-[#051216]">
+          {/* <nav className=" bg-[#051216]">
             <header className="flex items-center justify-between lg:w-10/12 mx-auto   text-white p-2">
               <img src={logo} alt="" />
 
               <div className=" hidden lg:block">
                 <div className="flex justify-between gap-10 font-semibold ">
-                  <p className=" hover:text-orange-500 duration-300 cursor-pointer">
+                  <Link  className=" hover:text-orange-500 duration-300 cursor-Linkointer">
                     Home
-                  </p>
-                  <p className=" hover:text-orange-500 duration-300 cursor-pointer">
+                  </Link>
+                  <Link to={"/about"} className=" hover:text-orange-500 duration-300 cursor-Linkointer">
                     About
-                  </p>
-                  <p className=" hover:text-orange-500 duration-300 cursor-pointer">
+                  </Link>
+                  <Link to={"/Service"} className=" hover:text-orange-500 duration-300 cursor-Linkointer">
                     Services
-                  </p>
-                  <p className=" hover:text-orange-500 duration-300 cursor-pointer">
+                  </Link>
+                  <Link to={"/price"} className=" hover:text-orange-500 duration-300 cursor-Linkointer">
                     Price
-                  </p>
-                  <p className=" hover:text-orange-500 duration-300 cursor-pointer">
+                  </Link>
+                  <Link to={"/contact"} className=" hover:text-orange-500 duration-300 cursor-Linkointer">
                     Contact
-                  </p>
+                  </Link>
                 </div>
               </div>
 
@@ -219,7 +219,7 @@ export default function App() {
                 Login
               </button>
             </header>
-          </nav>
+          </nav> */}
 
           <div className=" lg:w-7/12 mx-auto mt-24 flex flex-col items-center gap-8">
             <div className=" text-3xl lg:text-6xl text-center font-semibold leading-relaxed">
@@ -447,16 +447,25 @@ export default function App() {
         ))}
       </div>
 
-      <div className=" grid grid-cols-2">
+      <div className="  bg-green-300 ">
+        <div className=" text-white w-11/12 mx-auto p-10 items-center text-center flex-col gap-8  ">
+          <button
+            onClick={fetchblog}
+            className=" border-2 px-8 py-4 rounded-2xl border-slate-400 bg-sky-900 text-base font-semibold font-sans hover:bg-slate-100 cursor-pointer hover:text-slate-950 duration-500"
+          >
+            {" "}
+            GET BLOGS
+          </button>
 
-        {
-            blogs?.map((blog)=> (
-                <div className=" border">
-                    <p>{blog.title}</p>
-                    <p>{blog.body}</p>
-                </div>
-            ))
-        }
+          <div className=" grid grid-cols-2 lg:grid-cols-3 gap-9 pt-14">
+            {blogs?.map((blog) => (
+              <div className=" border rounded-lg p-4 bg-emerald-950 ">
+                <p className=" text-3xl font-semibold border-b pb-3">{blog.title}</p>
+                <p className=" opacity-75 pt-3">{blog.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
