@@ -10,22 +10,24 @@ import Pricing from "./Pricing";
 import Service from "./Service";
 import Login from "./Login";
 import Navbar from "./components/Navbar";
+import Footeer from "./components/Footeer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-
-<Navbar/>
+      <Navbar />
 
       <Routes>
-        <Route path="/home" element={<App />} />
+        <Route path="/App" element={<App />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
+
+      <Footeer/>
     </BrowserRouter>
   </React.StrictMode>
 );

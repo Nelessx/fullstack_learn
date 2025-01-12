@@ -11,7 +11,7 @@ export default function Navbar() {
 
           <div className=" hidden lg:block">
             <div className="flex justify-between gap-10 font-semibold ">
-              <Link className=" hover:text-orange-500 duration-300 cursor-Linkointer">
+              <Link to={"/app"} className=" hover:text-orange-500 duration-300 cursor-Linkointer">
                 Home
               </Link>
               <Link
