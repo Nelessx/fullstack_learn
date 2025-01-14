@@ -72,6 +72,7 @@ export default function Footeer() {
   return (
     <div className=" bg-[#011316] text-white mt-20 ">
       <div className="py-20 w-10/12 mx-auto grid grid-cols-4 gap-4">
+      
         <div className="flex flex-col space-y-6">
           <div className=" flex items-center gap-2">
             <svg
@@ -108,6 +109,7 @@ export default function Footeer() {
             </p>
           ))}
         </div>
+
         <div className="flex flex-col items-center justify-center">
           <p className=" text-xl font-semibold mb-4">Community:</p>
           {CompanyLinks.map((item, index) => (
@@ -116,6 +118,7 @@ export default function Footeer() {
             </p>
           ))}
         </div>
+
         <div className="flex flex-col items-center justify-center">
           <p className=" text-xl font-semibold mb-4">Solution:</p>
           {solutionLinks.map((item, index) => (
@@ -124,6 +127,7 @@ export default function Footeer() {
             </p>
           ))}
         </div>
+        
       </div>
     </div>
   );

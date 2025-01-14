@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import logo from "./favicon.ico";
+// import logo from "./favicon.ico";
 import dashboard from "./Dashboard.png";
 import amazon from "./amazon.png";
 import axios from "axios";
-import { Link } from "react-router";
+// import { Link } from "react-router";
 
 export default function App() {
   const [blogs, setBlogs] = useState();

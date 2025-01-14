@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import logo from "../logo.svg"
+import logo from "../logo.svg";
 
 export default function Navbar() {
   return (
@@ -11,7 +11,10 @@ export default function Navbar() {
 
           <div className=" hidden lg:block">
             <div className="flex justify-between gap-10 font-semibold ">
-              <Link to={"/app"} className=" hover:text-orange-500 duration-300 cursor-Linkointer">
+              <Link
+                to={"/app"}
+                className=" hover:text-orange-500 duration-300 cursor-Linkointer"
+              >
                 Home
               </Link>
               <Link
@@ -37,6 +40,13 @@ export default function Navbar() {
                 className=" hover:text-orange-500 duration-300 cursor-Linkointer"
               >
                 Contact
+              </Link>
+              
+              <Link
+                to={"/testfooter"}
+                className=" hover:text-orange-500 duration-300 cursor-Linkointer"
+              >
+                Test_footer
               </Link>
             </div>
           </div>

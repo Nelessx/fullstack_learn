@@ -11,6 +11,7 @@ import Service from "./Service";
 import Login from "./Login";
 import Navbar from "./components/Navbar";
 import Footeer from "./components/Footeer";
+import Testfooter from "./Testfooter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,6 +26,8 @@ root.render(
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Testfooter" element={<Testfooter />} />
+        
       </Routes>
 
       <Footeer/>
