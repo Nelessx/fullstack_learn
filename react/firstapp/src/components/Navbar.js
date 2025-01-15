@@ -7,12 +7,14 @@ export default function Navbar() {
     <div>
       <nav className=" bg-[#051216]">
         <header className="flex items-center justify-between lg:w-10/12 mx-auto   text-white p-2">
-          <img className="w-20" src={logo} alt="" />
+          <Link to={"/"}>
+          <img className="w-20" src={logo} alt="" /></Link>
+          
 
           <div className=" hidden lg:block">
             <div className="flex justify-between gap-10 font-semibold ">
               <Link
-                to={"/app"}
+                to={"/"}
                 className=" hover:text-orange-500 duration-300 cursor-Linkointer"
               >
                 Home
@@ -29,12 +31,7 @@ export default function Navbar() {
               >
                 Services
               </Link>
-              <Link
-                to={"/price"}
-                className=" hover:text-orange-500 duration-300 cursor-Linkointer"
-              >
-                Price
-              </Link>
+              
               <Link
                 to={"/contact"}
                 className=" hover:text-orange-500 duration-300 cursor-Linkointer"

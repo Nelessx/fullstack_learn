@@ -70,8 +70,8 @@ export default function Footeer() {
     },
   ];
   return (
-    <div className=" bg-[#011316] text-white mt-20 ">
-      <div className="py-20 w-10/12 mx-auto grid grid-cols-4 gap-4">
+    <div id="footer" className=" bg-[#011316] text-white mt-20 ">
+      <div className="py-20 w-full px-4 md:w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
       
         <div className="flex flex-col space-y-6">
           <div className=" flex items-center gap-2">
