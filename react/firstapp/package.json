@@ -6,8 +6,6 @@
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
-    "react-accessible-accordion": "^5.0.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^19.0.0",
     "react-router": "^7.1.1",
     "react-scripts": "5.0.1",

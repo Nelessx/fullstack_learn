@@ -4,17 +4,18 @@ import AmazonLogo from "../components/AmazonLogo";
 import Faq from "../components/Faq";
 import StatSection from "../components/StatSection";
 import Pricing from "../components/Pricing";
-import Navbar2 from "../components/Nabar2";
+// import Navbar2 from "../components/Nabar2";
+import ServicesSection from "../components/ServicesSection";
 
 export default function App() {
   return (
     <div>
-      <Navbar2 />
+      {/* <Navbar2 /> */}
       <Hero />
 
       <AmazonLogo />
       <Pricing />
-      <Faq />
+      <ServicesSection/>
       <StatSection />
 
       <Accordion />

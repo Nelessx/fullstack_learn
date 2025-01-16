@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import logo from "../logo.svg";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Navbar() {
   return (
@@ -38,9 +39,21 @@ export default function Navbar() {
               >
                 Contact
               </Link>
-              
               <Link
-                to={"/testfooter"}
+                to={"/Blogs"}
+                className=" hover:text-orange-500 duration-300 cursor-Linkointer"
+              >
+                Blogs
+              </Link>
+
+              <Link
+                to={"/users"}
+                className=" hover:text-orange-500 duration-300 cursor-Linkointer"
+              >
+                Users
+              </Link>
+              <Link href="#test-footer" 
+              to={"/Testfooter"}
                 className=" hover:text-orange-500 duration-300 cursor-Linkointer"
               >
                 Test_footer
