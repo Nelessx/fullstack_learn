@@ -1,15 +1,8 @@
 import React from "react";
 
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
 
-// Demo styles, see 'Styles' section below for some notes on use.
-import "react-accessible-accordion/dist/fancy-example.css";
+
+// Demo styles, see 'Styles' section below for some notes on us
 
 // import Slider from "./Components/slider";
 
@@ -71,78 +64,7 @@ export default function Example() {
         </SwiperSlide>
       </Swiper>
 
-      <Accordion className="w-10/12 mt-20 mx-auto p-4 border rounded-lg divide-y divide-gray-200">
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton className="w-full text-left px-4 py-2 text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none">
-              What harsh truths do you prefer to ignore?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel className="px-4 py-2 bg-white">
-            <p className="text-sm text-gray-600">
-              Facing reality can be difficult, but ignoring the truth often
-              leads to greater challenges in the long run.
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton className="w-full text-left px-4 py-2 text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none">
-              Is free will real or just an illusion?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel className="px-4 py-2 bg-white">
-            <p className="text-sm text-gray-600">
-              Philosophers and scientists continue to debate this topic,
-              exploring whether our decisions are predetermined or a product of
-              choice.
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton className="w-full text-left px-4 py-2 text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none">
-              What are the most important lessons in life?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel className="px-4 py-2 bg-white">
-            <p className="text-sm text-gray-600">
-              Kindness, resilience, and the ability to adapt to change are
-              invaluable lessons that shape a fulfilling life.
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton className="w-full text-left px-4 py-2 text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none">
-              How can you measure happiness?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel className="px-4 py-2 bg-white">
-            <p className="text-sm text-gray-600">
-              Happiness is subjective and can be measured by moments of
-              contentment, meaningful relationships, and personal growth.
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton className="w-full text-left px-4 py-2 text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none">
-              What is the role of technology in our lives?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel className="px-4 py-2 bg-white">
-            <p className="text-sm text-gray-600">
-              Technology enhances convenience, connects people, and drives
-              innovation, but balancing its use is crucial for well-being.
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-      </Accordion>
+   
     </div>
   );
 }
