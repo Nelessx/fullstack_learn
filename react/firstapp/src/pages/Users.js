@@ -19,8 +19,8 @@ export default function Blogs() {
   }, []);
 
   return (
-    <div className="bg-gray-400">
-      <div className=" bg-gradient-to-b  from-gray-700 to-gray-400 p-1">
+    <div className="bg-gray-300">
+      <div className=" bg-gradient-to-b  from-gray-700 to-gray-300 p-1">
         <div className="text-center py-20 rounded-b-3xl flex flex-col gap-7 bg-gradient-to-b from-[#051216] to-[#1b6075] text-white ">
           <p className=" text-3xl font-semibold ">USERS</p>
           <p className=" text-lg opacity-70 w-8/12 mx-auto">
@@ -33,7 +33,7 @@ export default function Blogs() {
 
       <div className=" w-10/12 mx-auto grid grid-cols-3 gap-4 py-16">
         {users?.map((users, index) => (
-          <div className=" border-gray-300 border-2 shadow-md p-4 items-center rounded-3xl bg-gray-300 flex flex-col gap-2 cursor-pointer hover:border-gray-800/90 hover:border-2 hover:bg-gray-100 duration-300">
+          <div className=" border-gray-100 border-2 shadow-md p-4 items-center rounded-3xl bg-gray-200 flex flex-col gap-2 cursor-pointer hover:border-gray-800/90 hover:border-2 hover:bg-gray-100 duration-300">
             <div className="w-50 rounded-3xl scale-90 overflow-hidden">
               <img src={profile} alt="" />
             </div>

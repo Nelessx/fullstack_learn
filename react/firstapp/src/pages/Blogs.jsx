@@ -34,7 +34,7 @@ export default function Blogs() {
       <div className=" bg-gray-300">
         <div className=" w-10/12 mx-auto grid grid-cols-3 gap-6 py-20">
           {blogs?.map((blog, index) => (
-            <div className=" border rounded-3xl shadow-md p-4 bg-white flex flex-col gap-4 cursor-pointer hover:border-gray-800/40 hover:border-2 duration-300">
+            <div className=" border-gray-300 border-2 shadow-md p-4 items-center rounded-3xl bg-gray-200 flex flex-col gap-2 cursor-pointer hover:border-gray-800/90 hover:border-2 hover:bg-gray-100 duration-300">
               <div className=" h-40 w-80 overflow-hidden rounded-3xl hover:border"> <img className=" hover:scale-110 duration-500" src={blog_img} alt="" /></div>
               <p className=" text-2xl line-clamp-1 font-semibold opacity-85 ">
                 {blog.title}
