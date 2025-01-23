@@ -21,37 +21,54 @@ try {
   console.log("Could't connect to the database");
 }
 
-
-
-//define schema 
+//define schema
 const StudentSchema = new mongoose.Schema({
-    name: { type: String,required: true},
-    age: { type: Number,required: true},
-    address: { type: String,required: false},
+  name: { type: String, required: true },
+  age: { type: Number, required: true },
+  address: { type: String, required: false },
 });
 
 //define model
- const Student = mongoose.model("Student",StudentSchema);
+const Student = mongoose.model("Student", StudentSchema);
+
+//Defne Students route
+app.get("/Students", async (req, res) => {
+  try {
+    const response = await Student.find();
+    return res.status(200).json(response);
+  } catch (error) {
+    console.log("something went wrong");
+  }
+});
+
+//create student route
+app.post("/Students", async (req, res) => {
+  try {
+    console.log(req.body);
+    const newStudent = await new Student(req.body).save();
+    console.log(newStudent);
+    return res.status(200).json(newStudent);
+  } catch (error) {
+    console.log("Something went wrong");
+  }
+});
 
 
-
- //Defne Students route
- app.get("/Students", async(req,res)=>{
-    try{
-        const response = await Student.find()
-        return res.status(200).json(response)
-    } catch(error){
-        console.log("something went wrong");
+//Student delete route
+app.delete("/Students", async (req,res) => {
+    try {
+       const deletedstudent = await Student.findByIdAndDelete({_id:req.body.id});
+    } catch (error) {
+        console.log("someting went wrong",error);
     }
-    
- });
+})
 
 
 //Test request to the server
-app.get("/",(req,res)=>{
-    res.status(200).json({
-        message: "server is working",
-    });
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "server is working",
+  });
 });
 
 //Run the server
