@@ -72,11 +72,10 @@ export default function Footeer() {
   return (
     <div id="footer" className=" bg-[#011316] text-white  ">
       <div className="py-20 w-full px-4 md:w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-      
         <div className="flex flex-col space-y-6">
           <div className=" flex items-center gap-2">
             <svg
-            className=" text-orange-500"
+              className=" text-orange-500"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -92,13 +91,28 @@ export default function Footeer() {
 
           <div className=" flex display-center gap-2 items-center">
             <p>🕞</p>
-            <p className=" opacity-50">Greater pleasures el esndures pains avoid welcomed avoided pariatu.</p>
+            <p className=" opacity-50">
+              Greater pleasures el esndures pains avoid welcomed avoided
+              pariatu.
+            </p>
           </div>
 
           <p className=" font-semibold text-xl">Subscribe to our Site :</p>
-          <input placeholder="Enter email" type="text" />
+          <div class="flex items-center border rounded-sm w-60">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="flex-grow px-2 py-2 outline-none text-black"
+            />
+            <button class="bg-teal-900 text-white px-4 py-2 font-medium hover:bg-gray-900 duration-300">
+              Subscribe
+            </button>
+          </div>
 
-          <p><span className=" opacity-70">© 2025 Loxcy - Created By </span><span className=" underline opacity-100"> Themesdesign</span></p>
+          <p>
+            <span className=" opacity-70">© 2025 Loxcy - Created By </span>
+            <span className=" underline opacity-100"> Themesdesign</span>
+          </p>
         </div>
 
         <div className="flex flex-col items-center justify-center">
@@ -127,7 +141,6 @@ export default function Footeer() {
             </p>
           ))}
         </div>
-        
       </div>
     </div>
   );

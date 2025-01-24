@@ -54,14 +54,54 @@ app.post("/Students", async (req, res) => {
 });
 
 
-//Student delete route
-app.delete("/Students", async (req,res) => {
+// //Student delete route
+// app.delete("/Students/:id", async (req,res) => {
+//     try {
+//        const deletedstudent = await Student.findByIdAndDelete({_id:req.params.id});
+//        console.log(deletedstudent);
+//        res.status(200).json({
+//         message:"Student deleted sucessfully",
+//         data: deletedstudent,
+//        });
+//     } catch (error) {
+//         console.log("someting went wrong",error);
+//     }
+// })
+
+//Student delete by parameter
+app.delete("/Students/:id", async (req,res) => {
     try {
-       const deletedstudent = await Student.findByIdAndDelete({_id:req.body.id});
+       const deletedstudent = await Student.findByIdAndDelete({_id:req.params.id});
+       console.log(deletedstudent);
+       res.status(200).json({
+        message:"Student deleted sucessfully",
+        data: deletedstudent,
+       });
     } catch (error) {
         console.log("someting went wrong",error);
     }
-})
+});
+
+app.get("/Students/:id", async (req,res) => {
+    try {
+       const student = await student.findById({_id:req.params.id});
+       return res.status(200).json(student);
+       
+    } catch (error) {
+        console.log("someting went wrong",error);
+    }
+});
+
+//update student by id
+app.put("/Students/:id", async (req,res) => {
+    try {
+       const updateStudent = await Student.findByIdAndUpdate({_id:req.params.id}, req.body, {new: true});
+       return res.status(200).json(updateStudent);
+       
+    } catch (error) {
+        console.log("someting went wrong",error);
+    }
+});
 
 
 //Test request to the server
@@ -73,5 +113,5 @@ app.get("/", (req, res) => {
 
 //Run the server
 app.listen(PORT, () => {
-  console.log("server is running");
+  console.log("server is running ");
 });

@@ -10,13 +10,12 @@ import pic5 from "./pic5.webp";
 import element from "./element.png";
 // import card_img from " ./bank.webp";
 
-function App() {    
-
-    // const boxes = [
-    //     {image: card_img,
-    //         name:"Banking"
-    //      }
-    // ]
+function App() {
+  // const boxes = [
+  //     {image: card_img,
+  //         name:"Banking"
+  //      }
+  // ]
   return (
     <body>
       <header className=" bg-[#040D12] ">
@@ -267,6 +266,8 @@ function App() {
           <button></button>
         </div>
       </section>
+
+
     </body>
   );
 }
