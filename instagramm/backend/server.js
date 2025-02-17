@@ -6,6 +6,7 @@ import cloudinary from "cloudinary";
 import multer from "multer";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import 'dotenv/config'
 
 const upload = multer({ dest: 'uploads/' })
 
@@ -21,15 +22,15 @@ app.get("/", (req, res) => {
 });
 
 cloudinary.config({
-  cloud_name: "dxldf0hlr",
-  api_key: "223733897962581",
-  api_secret: "zYsmz9KPhhLjEqdy6700d1UFUZw",
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
 });
 
 // 3. Database configuration
 try {
   mongoose.connect(
-    "mongodb+srv://karnnelessx:iM3cFsevCI2Oi9Cn@cluster0.30jax.mongodb.net/instagram_db?retryWrites=true&w=majority&appName=Cluster0"
+    process.env.MONGO_URL,
   );
   console.log("MongoDB connected successfully");
 } catch (error) {
