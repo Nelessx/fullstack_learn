@@ -306,6 +306,6 @@ app.post("/users/login", async (req,res)=>{
 })
 
 // Listen to the server
-app.listen(4000, () => {
-  console.log("Server is running on port 4000");
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
