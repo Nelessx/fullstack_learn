@@ -5,14 +5,14 @@ import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
 import axios from "axios";
 import { Loader } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export function CreatePostDialog() {
-  const [title, setTitle] = useState("");
-  const [image, setImage] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [title, setTitle] = useState<string>("");
+  const [image, setImage] = useState<File | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const handleCreatePost = async (e) => {
+  const handleCreatePost = async (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!image) {
@@ -24,7 +24,7 @@ export function CreatePostDialog() {
     formData.append("image", image);
 
     try {
-      const res = await axios.post("http://localhost:4000/posts", formData);
+      await axios.post("https://fullstack-learn.onrender.com/posts", formData);
 
       setLoading(false);
       setTitle("");
@@ -66,7 +66,7 @@ export function CreatePostDialog() {
                 required
                 type="text"
                 value={title}
-                onChange={(e) => setTitle(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
               />
             </div>
 
@@ -76,8 +76,8 @@ export function CreatePostDialog() {
                 required
                 type="file"
                 accept="image/*"
-                onChange={(e) => {
-                  setImage(e.target.files[0]);
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                  setImage(e.target.files?.[0] || null);
                 }}
               />
             </div>

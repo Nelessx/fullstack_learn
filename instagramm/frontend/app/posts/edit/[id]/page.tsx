@@ -16,21 +16,25 @@ export default function Page({ params }: {params: {id: string}}) {
   const [singlePost, setSinglePost] = useState<ISinglePost | undefined>(undefined);
 
   const { toast } = useToast();
-  const fetchSinglePost = async () => {
-    try {
-      const response = await axios.get(`http://localhost:4000/posts/${params.id}`);
-      setSinglePost(response.data);
-    } catch (error) {
-      toast({
-        title: "Something went wrong while fetching the single post",
-      });
-      console.log("Something went wrong", error);
-    }
-  };
+
 
   useEffect(() => {
+
+    const fetchSinglePost = async () => {
+        try {
+          const response = await axios.get(`https://fullstack-learn.onrender.com/posts/${params.id}`);
+          setSinglePost(response.data);
+        } catch (error) {
+          toast({
+            title: "Something went wrong while fetching the single post",
+          });
+          console.log("Something went wrong", error);
+        }
+      };
+
+
     fetchSinglePost();
-  }, [params.id]);
+  }, [params.id,toast]);
 
   const [title, setTitle] = useState<string>("");
   const [image, setImage] = useState<string>("");
@@ -49,11 +53,12 @@ export default function Page({ params }: {params: {id: string}}) {
     e.preventDefault();
     
     try {
-      const resposne = await axios.patch(`http://localhost:4000/posts/${params.id}`, {
+    await axios.patch(`https://fullstack-learn.onrender.com/posts/${params.id}`, {
         title: title,
         image: image,
       });
-      fetchSinglePost();
+      
+    //   fetchSinglePost();
       toast({
         title: "Post updated successfully",
       });

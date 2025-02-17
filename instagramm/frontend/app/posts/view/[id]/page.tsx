@@ -1,35 +1,45 @@
 "use client";
 
+import { IPost } from "@/components/feed-section";
 import { useToast } from "@/hooks/use-toast";
 import axios from "axios";
 import { Heart } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export default function Page({ params }: {params: {id: string}}) {
+interface PageProps {
+    params:{
+        id: string;
+    }
+}
+
+export default function Page({ params }: PageProps) {
   const postId = params.id;
   //   console.log(postId);
 
-  const [singlePost, setSinglePost] = useState();
+  const [singlePost, setSinglePost] = useState<IPost | null>(null);
   console.log(singlePost, "This is single post");
 
   const { toast } = useToast();
-  const fetchSinglePost = async () => {
-    try {
-      const response = await axios.get(`http://localhost:4000/posts/${postId}`);
-      //   console.log(response.data);
-      setSinglePost(response.data);
-    } catch (error) {
-      console.log("Something went wrong", error);
-      toast({
-        title: "Something went wrong while fetching the single post",
-      });
-    }
-  };
 
   useEffect(() => {
+
+    const fetchSinglePost = async () => {
+        try {
+          const response = await axios.get(`https://fullstack-learn.onrender.com/posts/${postId}`);
+          //   console.log(response.data);
+          setSinglePost(response.data);
+        } catch (error) {
+          console.log("Something went wrong", error);
+          toast({
+            title: "Something went wrong while fetching the single post",
+          });
+        }
+      };
+
+
     fetchSinglePost();
-  }, []);
+  }, [postId,toast]);
 
   return (
     <div>

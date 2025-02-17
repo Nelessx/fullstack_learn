@@ -8,7 +8,7 @@ import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 
-interface IPost {
+export interface IPost {
   _id: string;
   image: string;
   title: string;
@@ -22,10 +22,10 @@ interface IPost {
 export default function FeedSection() {
   const { toast } = useToast();
 
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<IPost[] | null>(null);
   const fetchPosts = async () => {
     try {
-      const receivedPosts = await axios.get("http://localhost:4000/posts");
+      const receivedPosts = await axios.get("https://fullstack-learn.onrender.com/posts");
       console.log(receivedPosts.data);
       setPosts(receivedPosts.data);
     } catch (error) {
@@ -40,7 +40,7 @@ export default function FeedSection() {
   const handleDeletePost = async (_id: string) => {
     try {
       // run delete function backend ko
-      const response = await axios.delete(`http://localhost:4000/posts/${_id}`);
+      const response = await axios.delete(`https://fullstack-learn.onrender.com/posts/${_id}`);
       console.log(response);
       fetchPosts();
       // window.location.reload();
@@ -58,7 +58,7 @@ export default function FeedSection() {
   };
 
   const handleLikePost = async (_id: string) => {
-    const respose = await axios.patch(`http://localhost:4000/posts/${_id}`, {
+    const respose = await axios.patch(`https://fullstack-learn.onrender.com/posts/${_id}`, {
       $inc: { likeCount: 1 },
     });
 
@@ -74,13 +74,13 @@ export default function FeedSection() {
   };
 
   //  For Comment------------------------->
-  const [commentText, setCommentText] = useState("");
+  const [commentText, setCommentText] = useState<string>("");
   console.log(commentText, "this is comment text");
 
-  const handlePostAComment = async (e,_id: string) => {
+  const handlePostAComment = async (e: React.FormEvent<HTMLFormElement> ,_id: string) => {
     e.preventDefault()
   
-    const respose = await axios.patch(`http://localhost:4000/posts/${_id}`, {
+    const respose = await axios.patch(`https://fullstack-learn.onrender.com/posts/${_id}`, {
       $push: { comments: { commentMessage: commentText } },
     });
 
@@ -97,8 +97,8 @@ export default function FeedSection() {
   };
 
   // Show comments handler ---------------------------------->
-  const [showComment, setShowComment] = useState(false);
-  const [currentCommentWalaId, setcurrentCommentWalaId] = useState();
+  const [showComment, setShowComment] = useState<boolean>(false);
+  const [currentCommentWalaId, setcurrentCommentWalaId] = useState<string>("");
   console.log(showComment, "this is show comment");
   console.log(currentCommentWalaId, "this is current comment");
 
