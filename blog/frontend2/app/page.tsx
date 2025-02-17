@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Feed from "@/components/feed";
+import HeroSection from "@/components/heroSection";
+import Topics from "@/components/topics";
 
 export interface IArticle {
   _id: string;
@@ -18,7 +20,9 @@ export default function Page() {
   const fetchAllArticle = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("https://blog-backend-3hpg.onrender.com/articles");
+      const response = await axios.get(
+        "https://blog-backend-3hpg.onrender.com/articles"
+      );
       setArticles(response.data.articles);
       setLoading(false);
     } catch (error) {
@@ -33,19 +37,21 @@ export default function Page() {
 
   return (
     <div>
-      {loading ? (
-        <div className=" space-y-6">
-          <div className="h-16 w-80 bg-gray-100"></div>
-          <div className="h-16 w-80 bg-gray-100"></div>
-          <div className="h-16 w-80 bg-gray-100"></div>
-          <div className="h-16 w-80 bg-gray-100"></div>
-          <div className="h-16 w-80 bg-gray-100"></div>
-        </div>
-      ) : (
-        <Feed
-          articles={articles}
-        />
-      )}
+        <HeroSection/>
+        <Topics/>
+      <div>
+        {loading ? (
+          <div className=" space-y-6">
+            <div className="h-16 w-80 bg-gray-100"></div>
+            <div className="h-16 w-80 bg-gray-100"></div>
+            <div className="h-16 w-80 bg-gray-100"></div>
+            <div className="h-16 w-80 bg-gray-100"></div>
+            <div className="h-16 w-80 bg-gray-100"></div>
+          </div>
+        ) : (
+          <Feed articles={articles} />
+        )}
+      </div>
     </div>
   );
 }
