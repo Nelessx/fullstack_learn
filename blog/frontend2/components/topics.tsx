@@ -42,10 +42,10 @@ export default function Topics() {
         return (
           <button
             key={item.label}
-            className="inline-flex items-center gap-2 px-6 py-2 bg-white rounded-full shadow-lg shadow-slate-500/20 hover:shadow-lg hover:shadow-slate-500 transition-shadow"
+            className="inline-flex items-center gap-2 px-6 py-2 bg-gray-600/50 rounded-full shadow-lg shadow-slate-500/20 hover:shadow-lg hover:shadow-slate-500 transition-shadow"
           >
             <Icon className={`w-5 h-5 ${item.color}`} />
-            <span className="text-lg font-semibold text-[#29294B]">{item.label}</span>
+            <span className="text-lg font-semibold text-[#ffffff]">{item.label}</span>
           </button>
         )
       })}

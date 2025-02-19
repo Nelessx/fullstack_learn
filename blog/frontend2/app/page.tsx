@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Feed from "@/components/feed";
-import HeroSection from "@/components/heroSection";
-import Topics from "@/components/topics";
 
 export interface IArticle {
   _id: string;
@@ -37,8 +35,7 @@ export default function Page() {
 
   return (
     <div>
-        <HeroSection/>
-        <Topics/>
+        
       <div>
         {loading ? (
           <div className=" space-y-6">
