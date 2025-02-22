@@ -3,10 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import HeroSection from "@/components/heroSection";
-import Topics from "@/components/topics";
 import HeroBg from "@/components/heroBg";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/modeToggle";
+import Topics from "@/components/topics";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +39,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-            {/* <ModeToggle/> */}
           <div className=" ">
             <HeroBg />
             <div className=" relative z-10">
@@ -49,8 +48,10 @@ export default function RootLayout({
             </div>
           </div>
 
-          {children}
+          
         </ThemeProvider>
+        {children}
+        <Footer/>
       </body>
     </html>
   );

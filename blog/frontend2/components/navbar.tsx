@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { ChevronDown, Search } from "lucide-react";
 import { ModeToggle } from "./modeToggle";
-import Home from "./ui/home";
+import NavMenu from "./ui/navMenu";
+import { Search } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -14,23 +14,13 @@ export default function Navbar() {
         height={500}
         width={500}
       />
-      <div className=" flex gap-1 items-center">
+      
         
-          <Home/> 
-        
-        <div className=" hover:bg-[#000000]/30 hover:rounded-lg duration-300 cursor-pointer px-4 py-2  text-[#ffffff] hover:text-[#ffffff]/90 flex ">
-          Features <ChevronDown />{" "}
-        </div>
-        <div className=" hover:bg-[#000000]/30 hover:rounded-lg duration-300 cursor-pointer px-4 py-2  text-[#ffffff] hover:text-[#ffffff]/90">
-          About
-        </div>
-        <div className=" hover:bg-[#000000]/30 hover:rounded-lg duration-300 cursor-pointer px-4 py-2  text-[#ffffff] hover:text-[#ffffff]/90">
-          Contact
-        </div>
-      </div>
+        <NavMenu/>
+      
 
       <div className=" flex gap-3 items-center">
-        <div className=" p-2 rounded-full hover:bg-[#e2e2e9] transition-colors text-[#29294B]/90 duration-300 cursor-pointer ">
+        <div className=" p-2 rounded-full hover:bg-[#0000002f] transition-colors text-[#ffffff]/90 duration-300 cursor-pointer ">
           <Search className=" size-5" />
         </div>
         <p className=" text-[#c7c7cd]">|</p>
