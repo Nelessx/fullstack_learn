@@ -1,11 +1,17 @@
+import FeedLeft from '@/components/feedLeft'
+import FeedRight from '@/components/feedRight'
 import React from 'react'
 
 export default function Page() {
   return (
-    <div className=' py-12'>
-      <p className=' w-10/12 mx-auto text-center font-semibold text-white/50 py-10  text-9xl border-2 border-slate-200/40 rounded-3xl bg-slate-400/10 px-10'>
-      BLOG-FEED SECTION
-      </p>
+    <div className=' py-12 w-11/12 mx-auto flex'>
+      <div className='w-8/12 '>
+        <FeedLeft/>
+        
+      </div>
+      <div className=' w-4/12 pl-12'>
+      <FeedRight/>
+      </div>
     </div>
   )
 }
