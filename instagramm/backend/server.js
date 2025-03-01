@@ -32,7 +32,7 @@ cloudinary.config({
 //
 const verifyToken = (req,res,next) =>{
     const authToken = req.headers["authorization"];
-    if(!authHeader){
+    if(!authToken){
         return res.status(401).json({message: "no token provided"});
     }
 
