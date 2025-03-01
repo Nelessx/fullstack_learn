@@ -27,6 +27,38 @@ cloudinary.config({
   api_secret: process.env.API_SECRET,
 });
 
+
+
+//
+const verifyToken = (req,res,next) =>{
+    const authToken = req.headers["authorization"];
+    if(!authHeader){
+        return res.status(401).json({message: "no token provided"});
+    }
+
+
+
+    const pureToken =authToken.split(" ")[1]
+    console.log(pureToken,"this is pure token");
+
+    jwt.verify(pureToken, "hdhdhduyieabdhkasb", (err,decoded)=>{
+        if(err){
+            return res.status(403).json({message: "token doesn't match"});
+    
+        }
+    })
+    
+
+    console.log(decoded,"this is decoded user data");
+    next()
+
+
+
+}
+
+
+
+
 // 3. Database configuration
 try {
   mongoose.connect(
@@ -63,7 +95,7 @@ const Post = mongoose.model("Post", postSchema);
 const User = mongoose.model("User", userSchema);
 
 // 6. Route configuration
-app.get("/posts", async (req, res) => {
+app.get("/posts",verifyToken, async (req, res) => {
   try {
     const allPost = await Post.find();
     console.log(allPost); // for developer to debug
