@@ -2,17 +2,15 @@
 
 import Image from 'next/image'
 import SpotlightCard from '@/components/ui/spotlightCard'
-import { Facebook, Instagram, LineChart, Linkedin, MapPin, SquareArrowOutUpRight, TwitterIcon } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, MapPin, SquareArrowOutUpRight, TwitterIcon } from 'lucide-react'
 import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-    type CarouselApi,
 } from "@/components/ui/carousel"
 
 
@@ -20,22 +18,6 @@ import {
 
 export default function FeedRight() {
 
-    const [api, setApi] = React.useState<CarouselApi>()
-    const [current, setCurrent] = React.useState(0)
-    const [count, setCount] = React.useState(0)
-
-    React.useEffect(() => {
-        if (!api) {
-            return
-        }
-
-        setCount(api.scrollSnapList().length)
-        setCurrent(api.selectedScrollSnap() + 1)
-
-        api.on("select", () => {
-            setCurrent(api.selectedScrollSnap() + 1)
-        })
-    }, [api])
 
     return (
         <div className='flex flex-col gap-6 tracking-wide'>
@@ -145,13 +127,6 @@ export default function FeedRight() {
                 </div>
 
             </SpotlightCard>
-
-
-
-
-
-
-
 
             <SpotlightCard className="custom-spotlight-card space-y-4 " spotlightColor="rgba(300, 300, 300, 0.1)">
                 <p className=' font-semibold text-white/80 text-xs'>CREATING    </p>

@@ -39,7 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className=" ">
+          <div >
             <HeroBg />
             <div className=" relative z-10">
               <Navbar />
@@ -50,7 +50,9 @@ export default function RootLayout({
 
           
         </ThemeProvider>
+
         {children}
+        
         <Footer/>
       </body>
     </html>

@@ -1,3 +1,4 @@
+"use client"
 import FeedLeft from '@/components/feedLeft'
 import FeedRight from '@/components/feedRight'
 import React from 'react'
@@ -5,6 +6,9 @@ import React from 'react'
 export default function Page() {
   return (
     <div className=' py-12 w-11/12 mx-auto flex'>
+
+ 
+        
       <div className='w-8/12 '>
         <FeedLeft/>
         
